@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "vrchat": "npx tsx src/main.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "vrchat": "^2.21.7"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
