@@ -13,7 +13,7 @@ export class GetInactiveFriendsUseCase implements UseCaseInterface {
    * 1ヶ月以上会っていないフレンド一覧を取得
    */
   async execute() {
-    const result = await this.client.getFriends();
+    const result = await this.client.getFriends({ throwOnError: true });
 
     if (result.data === undefined) {
       return [];

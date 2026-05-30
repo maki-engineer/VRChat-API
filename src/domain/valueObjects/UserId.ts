@@ -11,7 +11,7 @@ export class UserId {
   }
 
   private validate(userId: string) {
-    if (!userId.startsWith('')) {
+    if (!userId.startsWith('usr_')) {
       throw new Error('This is an invalid user ID format.');
     }
   }
