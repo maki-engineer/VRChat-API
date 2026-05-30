@@ -7,12 +7,12 @@ async function main() {
   const command = cli.getCommand();
   const twoFactorCode = await cli.askTwoFactorCode();
   const vrchatApiClient = new VRChatApiClient(twoFactorCode);
-  const client = vrchatApiClient.client
+  const client = vrchatApiClient.client;
 
   const commandList: Record<string, () => Promise<void>> = {
     'inactive friends': async () => {
-        const useCase = new GetInactiveFriendsUseCase(client);
-        await useCase.execute();
+      const useCase = new GetInactiveFriendsUseCase(client);
+      await useCase.execute();
     },
   };
 
